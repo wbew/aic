@@ -1,15 +1,30 @@
 [tasks."openapi-client:gen"]
 description = "Generate a client using AIC's OpenAPI specification (https://api.artic.edu/api/v1/openapi.json)"
 usage = '''
-arg "<openapi-spec>" help="path to the OpenAPI JSON file" default="./aic-api.openapi.jsonc"
+arg "<openapi-spec>" help="path to the OpenAPI JSON file" default="./openapi/aic.patched.openapi.jsonc"
 '''
-run = "bunx @hey-api/openapi-ts --input ${openapi-spec?} --output ./lib/generated"
+run = "bunx @hey-api/openapi-ts --input ${usage_openapi_spec?} --output ./lib/generated"
 
-[tasks."openapi-client:refresh"]
+[tasks."openapi-client:fetch-spec"]
 description = "Refresh the OpenAPI specification"
 run = '''
-xh --download "https://api.artic.edu/api/v1/openapi.json" -o "./aic-api.openapi.jsonc"
+xh --download "https://api.artic.edu/api/v1/openapi.json" -o "./openapi/aic.original.openapi.jsonc"
 '''
+
+[tasks."openapi-client:patch"]
+description = "Patch upstream OpenAPI spec with local type overrides"
+usage = '''
+arg "[input]" help="path to upstream OpenAPI JSON file" default="./openapi/aic.original.openapi.jsonc"
+arg "[output]" help="path to patched OpenAPI JSON file" default="./openapi/aic.patched.openapi.jsonc"
+'''
+run = "bun run ./openapi/patch-openapi.ts ${usage_input?} ${usage_output?}"
+
+[tasks."openapi-client:update"]
+description = "Refresh upstream spec, patch it, then regenerate client"
+depends = ["openapi-client:fetch-spec", "openapi-client:patch", "openapi-client:gen"]
+
+[tasks]
+main = "bun run index.ts"
 
 [tools]
 xh = "latest"

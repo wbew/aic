@@ -1,0 +1,130 @@
+{
+  // Fix: upstream spec declares openapi 3.1 but uses Swagger 2.0 structure
+  "swagger": "2.0",
+
+  // Artwork type overrides
+  "definitions": {
+    "Artwork": {
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "api_model": {
+          "type": "string"
+        },
+        "api_link": {
+          "type": "string",
+          "format": "uri"
+        },
+        "title": {
+          "type": "string"
+        },
+        "is_boosted": {
+          "type": "boolean"
+        },
+        "date_start": {
+          "type": "integer"
+        },
+        "date_end": {
+          "type": "integer"
+        },
+        "date_display": {
+          "type": "string"
+        },
+        "artist_display": {
+          "type": "string"
+        },
+        "place_of_origin": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "medium_display": {
+          "type": "string"
+        },
+        "is_public_domain": {
+          "type": "boolean"
+        },
+        "is_zoomable": {
+          "type": "boolean"
+        },
+        "has_multimedia_resources": {
+          "type": "boolean"
+        },
+        "has_educational_resources": {
+          "type": "boolean"
+        },
+        "has_advanced_imaging": {
+          "type": "boolean"
+        },
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "is_on_view": {
+          "type": "boolean"
+        },
+        "gallery_title": {
+          "type": "string"
+        },
+        "gallery_id": {
+          "type": "integer"
+        },
+        "image_id": {
+          "type": "string"
+        },
+        "alt_image_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "document_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sound_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "video_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "text_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "site_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}
