@@ -8,5 +8,8 @@ run = "bunx @hey-api/openapi-ts --input ${openapi-spec?} --output ./lib/generate
 [tasks."openapi-client:refresh"]
 description = "Refresh the OpenAPI specification"
 run = '''
-"curl -fsSL "https://api.artic.edu/api/v1/openapi.json" -o "aic-api-openapi.jsonc""
+xh --download "https://api.artic.edu/api/v1/openapi.json" -o "./aic-api.openapi.jsonc"
 '''
+
+[tools]
+xh = "latest"
