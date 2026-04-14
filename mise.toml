@@ -1,0 +1,3 @@
+[tasks]
+build = "bun run build"
+test = "bun run test"
