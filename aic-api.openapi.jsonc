@@ -11,15 +11,18 @@
   },
   "servers": [
     {
-      "url": "api.artic.edu/api/v1"
+      "url": "api.artic.edu\/api/v1"
     }
   ],
   "paths": {
     "/artworks": {
       "get": {
         "description": "A list of all artworks sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -39,6 +42,7 @@
         }
       }
     },
+
     "/artworks/search": {
       "get": {
         "description": "Search artworks data in the aggregator. Artworks in the groups of essentials are boosted so they'll show up higher in results.",
@@ -81,9 +85,12 @@
         }
       }
     },
+
     "/artworks/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -108,11 +115,15 @@
         }
       }
     },
+
     "/agents": {
       "get": {
         "description": "A list of all agents sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -132,6 +143,7 @@
         }
       }
     },
+
     "/agents/search": {
       "get": {
         "description": "Search agents data in the aggregator. ",
@@ -174,9 +186,12 @@
         }
       }
     },
+
     "/agents/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -201,11 +216,15 @@
         }
       }
     },
+
     "/artists": {
       "get": {
         "description": "A list of all artists sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -225,9 +244,12 @@
         }
       }
     },
+
     "/artists/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -252,11 +274,15 @@
         }
       }
     },
+
     "/places": {
       "get": {
         "description": "A list of all places sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -276,6 +302,7 @@
         }
       }
     },
+
     "/places/search": {
       "get": {
         "description": "Search places data in the aggregator. ",
@@ -318,9 +345,12 @@
         }
       }
     },
+
     "/places/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -345,11 +375,15 @@
         }
       }
     },
+
     "/galleries": {
       "get": {
         "description": "A list of all galleries sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -369,6 +403,7 @@
         }
       }
     },
+
     "/galleries/search": {
       "get": {
         "description": "Search galleries data in the aggregator. ",
@@ -411,9 +446,12 @@
         }
       }
     },
+
     "/galleries/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -438,11 +476,15 @@
         }
       }
     },
+
     "/exhibitions": {
       "get": {
         "description": "A list of all exhibitions sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -462,6 +504,7 @@
         }
       }
     },
+
     "/exhibitions/search": {
       "get": {
         "description": "Search exhibitions data in the aggregator. ",
@@ -504,9 +547,12 @@
         }
       }
     },
+
     "/exhibitions/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -531,11 +577,15 @@
         }
       }
     },
+
     "/agent-types": {
       "get": {
         "description": "A list of all agent-types sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -555,9 +605,12 @@
         }
       }
     },
+
     "/agent-types/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -582,11 +635,15 @@
         }
       }
     },
+
     "/agent-roles": {
       "get": {
         "description": "A list of all agent-roles sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -606,9 +663,12 @@
         }
       }
     },
+
     "/agent-roles/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -633,11 +693,15 @@
         }
       }
     },
+
     "/artwork-place-qualifiers": {
       "get": {
         "description": "A list of all artwork-place-qualifiers sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -657,9 +721,12 @@
         }
       }
     },
+
     "/artwork-place-qualifiers/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -684,11 +751,15 @@
         }
       }
     },
+
     "/artwork-date-qualifiers": {
       "get": {
         "description": "A list of all artwork-date-qualifiers sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -708,9 +779,12 @@
         }
       }
     },
+
     "/artwork-date-qualifiers/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -735,11 +809,15 @@
         }
       }
     },
+
     "/artwork-types": {
       "get": {
         "description": "A list of all artwork-types sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -759,9 +837,12 @@
         }
       }
     },
+
     "/artwork-types/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -786,11 +867,15 @@
         }
       }
     },
+
     "/category-terms": {
       "get": {
         "description": "A list of all category-terms sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -810,6 +895,7 @@
         }
       }
     },
+
     "/category-terms/search": {
       "get": {
         "description": "Search category-terms data in the aggregator. ",
@@ -852,9 +938,12 @@
         }
       }
     },
+
     "/category-terms/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -879,11 +968,15 @@
         }
       }
     },
+
     "/images": {
       "get": {
         "description": "A list of all images sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -903,6 +996,7 @@
         }
       }
     },
+
     "/images/search": {
       "get": {
         "description": "Search images data in the aggregator. ",
@@ -945,9 +1039,12 @@
         }
       }
     },
+
     "/images/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -972,11 +1069,15 @@
         }
       }
     },
+
     "/videos": {
       "get": {
         "description": "A list of all videos sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -996,6 +1097,7 @@
         }
       }
     },
+
     "/videos/search": {
       "get": {
         "description": "Search videos data in the aggregator. ",
@@ -1038,9 +1140,12 @@
         }
       }
     },
+
     "/videos/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -1065,11 +1170,15 @@
         }
       }
     },
+
     "/sounds": {
       "get": {
         "description": "A list of all sounds sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -1089,6 +1198,7 @@
         }
       }
     },
+
     "/sounds/search": {
       "get": {
         "description": "Search sounds data in the aggregator. ",
@@ -1131,9 +1241,12 @@
         }
       }
     },
+
     "/sounds/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -1158,11 +1271,15 @@
         }
       }
     },
+
     "/texts": {
       "get": {
         "description": "A list of all texts sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -1182,6 +1299,7 @@
         }
       }
     },
+
     "/texts/search": {
       "get": {
         "description": "Search texts data in the aggregator. ",
@@ -1224,9 +1342,12 @@
         }
       }
     },
+
     "/texts/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -1251,11 +1372,15 @@
         }
       }
     },
+
     "/products": {
       "get": {
         "description": "A list of all products sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -1275,6 +1400,7 @@
         }
       }
     },
+
     "/products/search": {
       "get": {
         "description": "Search products data in the aggregator. ",
@@ -1317,9 +1443,12 @@
         }
       }
     },
+
     "/products/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -1344,11 +1473,15 @@
         }
       }
     },
+
     "/tours": {
       "get": {
         "description": "A list of all tours sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -1368,6 +1501,7 @@
         }
       }
     },
+
     "/tours/search": {
       "get": {
         "description": "Search tours data in the aggregator. ",
@@ -1410,9 +1544,12 @@
         }
       }
     },
+
     "/tours/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -1437,11 +1574,15 @@
         }
       }
     },
+
     "/mobile-sounds": {
       "get": {
         "description": "A list of all mobile-sounds sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -1461,6 +1602,7 @@
         }
       }
     },
+
     "/mobile-sounds/search": {
       "get": {
         "description": "Search mobile-sounds data in the aggregator. ",
@@ -1503,9 +1645,12 @@
         }
       }
     },
+
     "/mobile-sounds/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -1530,11 +1675,15 @@
         }
       }
     },
+
     "/publications": {
       "get": {
         "description": "A list of all publications sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -1554,6 +1703,7 @@
         }
       }
     },
+
     "/publications/search": {
       "get": {
         "description": "Search publications data in the aggregator. ",
@@ -1596,9 +1746,12 @@
         }
       }
     },
+
     "/publications/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -1623,11 +1776,15 @@
         }
       }
     },
+
     "/sections": {
       "get": {
         "description": "A list of all sections sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -1647,6 +1804,7 @@
         }
       }
     },
+
     "/sections/search": {
       "get": {
         "description": "Search sections data in the aggregator. ",
@@ -1689,9 +1847,12 @@
         }
       }
     },
+
     "/sections/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -1716,11 +1877,15 @@
         }
       }
     },
+
     "/sites": {
       "get": {
         "description": "A list of all sites sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -1740,6 +1905,7 @@
         }
       }
     },
+
     "/sites/search": {
       "get": {
         "description": "Search sites data in the aggregator. ",
@@ -1782,9 +1948,12 @@
         }
       }
     },
+
     "/sites/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -1809,11 +1978,15 @@
         }
       }
     },
+
     "/events": {
       "get": {
         "description": "A list of all events sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -1833,6 +2006,7 @@
         }
       }
     },
+
     "/events/search": {
       "get": {
         "description": "Search events data in the aggregator. ",
@@ -1875,9 +2049,12 @@
         }
       }
     },
+
     "/events/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -1902,11 +2079,15 @@
         }
       }
     },
+
     "/event-occurrences": {
       "get": {
         "description": "A list of all event-occurrences sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -1926,6 +2107,7 @@
         }
       }
     },
+
     "/event-occurrences/search": {
       "get": {
         "description": "Search event-occurrences data in the aggregator. ",
@@ -1968,9 +2150,12 @@
         }
       }
     },
+
     "/event-occurrences/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -1995,11 +2180,15 @@
         }
       }
     },
+
     "/event-programs": {
       "get": {
         "description": "A list of all event-programs sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -2019,6 +2208,7 @@
         }
       }
     },
+
     "/event-programs/search": {
       "get": {
         "description": "Search event-programs data in the aggregator. ",
@@ -2061,9 +2251,12 @@
         }
       }
     },
+
     "/event-programs/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -2088,11 +2281,15 @@
         }
       }
     },
+
     "/articles": {
       "get": {
         "description": "A list of all articles sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -2112,6 +2309,7 @@
         }
       }
     },
+
     "/articles/search": {
       "get": {
         "description": "Search articles data in the aggregator. ",
@@ -2154,9 +2352,12 @@
         }
       }
     },
+
     "/articles/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -2181,11 +2382,15 @@
         }
       }
     },
+
     "/highlights": {
       "get": {
         "description": "A list of all highlights sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -2205,6 +2410,7 @@
         }
       }
     },
+
     "/highlights/search": {
       "get": {
         "description": "Search highlights data in the aggregator. ",
@@ -2247,9 +2453,12 @@
         }
       }
     },
+
     "/highlights/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -2274,11 +2483,15 @@
         }
       }
     },
+
     "/static-pages": {
       "get": {
         "description": "A list of all static-pages sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -2298,6 +2511,7 @@
         }
       }
     },
+
     "/static-pages/search": {
       "get": {
         "description": "Search static-pages data in the aggregator. ",
@@ -2340,9 +2554,12 @@
         }
       }
     },
+
     "/static-pages/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -2367,11 +2584,15 @@
         }
       }
     },
+
     "/generic-pages": {
       "get": {
         "description": "A list of all generic-pages sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -2391,6 +2612,7 @@
         }
       }
     },
+
     "/generic-pages/search": {
       "get": {
         "description": "Search generic-pages data in the aggregator. ",
@@ -2433,9 +2655,12 @@
         }
       }
     },
+
     "/generic-pages/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -2460,11 +2685,15 @@
         }
       }
     },
+
     "/landing-pages": {
       "get": {
         "description": "A list of all landing-pages sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -2484,6 +2713,7 @@
         }
       }
     },
+
     "/landing-pages/search": {
       "get": {
         "description": "Search landing-pages data in the aggregator. ",
@@ -2526,9 +2756,12 @@
         }
       }
     },
+
     "/landing-pages/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -2553,11 +2786,15 @@
         }
       }
     },
+
     "/press-releases": {
       "get": {
         "description": "A list of all press-releases sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -2577,6 +2814,7 @@
         }
       }
     },
+
     "/press-releases/search": {
       "get": {
         "description": "Search press-releases data in the aggregator. ",
@@ -2619,9 +2857,12 @@
         }
       }
     },
+
     "/press-releases/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -2646,11 +2887,15 @@
         }
       }
     },
+
     "/educator-resources": {
       "get": {
         "description": "A list of all educator-resources sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -2670,6 +2915,7 @@
         }
       }
     },
+
     "/educator-resources/search": {
       "get": {
         "description": "Search educator-resources data in the aggregator. ",
@@ -2712,9 +2958,12 @@
         }
       }
     },
+
     "/educator-resources/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -2739,11 +2988,15 @@
         }
       }
     },
+
     "/digital-publications": {
       "get": {
         "description": "A list of all digital-publications sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -2763,6 +3016,7 @@
         }
       }
     },
+
     "/digital-publications/search": {
       "get": {
         "description": "Search digital-publications data in the aggregator. ",
@@ -2805,9 +3059,12 @@
         }
       }
     },
+
     "/digital-publications/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -2832,11 +3089,15 @@
         }
       }
     },
+
     "/digital-publication-articles": {
       "get": {
         "description": "A list of all digital-publication-articles sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -2856,6 +3117,7 @@
         }
       }
     },
+
     "/digital-publication-articles/search": {
       "get": {
         "description": "Search digital-publication-articles data in the aggregator. ",
@@ -2898,9 +3160,12 @@
         }
       }
     },
+
     "/digital-publication-articles/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -2925,11 +3190,15 @@
         }
       }
     },
+
     "/printed-publications": {
       "get": {
         "description": "A list of all printed-publications sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -2949,6 +3218,7 @@
         }
       }
     },
+
     "/printed-publications/search": {
       "get": {
         "description": "Search printed-publications data in the aggregator. ",
@@ -2991,9 +3261,12 @@
         }
       }
     },
+
     "/printed-publications/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -3018,11 +3291,15 @@
         }
       }
     },
+
     "/hours": {
       "get": {
         "description": "A list of all hours sorted by last updated date in descending order.",
-        "produces": ["application/json"],
-        "parameters": [],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -3042,6 +3319,7 @@
         }
       }
     },
+
     "/hours/search": {
       "get": {
         "description": "Search hours data in the aggregator. ",
@@ -3084,9 +3362,12 @@
         }
       }
     },
+
     "/hours/{id}": {
       "get": {
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/id"
@@ -3111,11 +3392,16 @@
         }
       }
     },
+
     "/search": {
       "get": {
-        "tags": ["search"],
+        "tags": [
+            "search"
+        ],
         "summary": "Search all data in the aggregator",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "$ref": "#/parameters/q"
@@ -3158,7 +3444,11 @@
   },
   "definitions": {
     "Error": {
-      "required": ["status", "error", "detail"],
+      "required": [
+        "status",
+        "error",
+        "detail"
+      ],
       "properties": {
         "status": {
           "type": "integer"
@@ -3488,6 +3778,7 @@
       },
       "type": "object"
     },
+
     "Agent": {
       "properties": {
         "id": {
@@ -3541,6 +3832,7 @@
       },
       "type": "object"
     },
+
     "Place": {
       "properties": {
         "id": {
@@ -3582,6 +3874,7 @@
       },
       "type": "object"
     },
+
     "Gallery": {
       "properties": {
         "id": {
@@ -3635,6 +3928,7 @@
       },
       "type": "object"
     },
+
     "Exhibition": {
       "properties": {
         "id": {
@@ -3721,6 +4015,7 @@
       },
       "type": "object"
     },
+
     "AgentType": {
       "properties": {
         "id": {
@@ -3753,6 +4048,7 @@
       },
       "type": "object"
     },
+
     "AgentRole": {
       "properties": {
         "id": {
@@ -3785,6 +4081,7 @@
       },
       "type": "object"
     },
+
     "ArtworkPlaceQualifier": {
       "properties": {
         "id": {
@@ -3817,6 +4114,7 @@
       },
       "type": "object"
     },
+
     "ArtworkDateQualifier": {
       "properties": {
         "id": {
@@ -3849,6 +4147,7 @@
       },
       "type": "object"
     },
+
     "ArtworkType": {
       "properties": {
         "id": {
@@ -3884,6 +4183,7 @@
       },
       "type": "object"
     },
+
     "CategoryTerm": {
       "properties": {
         "id": {
@@ -3922,6 +4222,7 @@
       },
       "type": "object"
     },
+
     "Image": {
       "properties": {
         "id": {
@@ -4014,6 +4315,7 @@
       },
       "type": "object"
     },
+
     "Video": {
       "properties": {
         "id": {
@@ -4079,10 +4381,14 @@
       },
       "type": "object"
     },
+
     "Sound": {
       "properties": {
         "id": {
           "description": "Unique identifier of this resource. Taken from the source system."
+        },
+        "lake_guid": {
+          "description": "Unique UUID of this resource in LAKE, our DAMS."
         },
         "api_model": {
           "description": "REST API resource type or endpoint"
@@ -4091,13 +4397,37 @@
           "description": "REST API link for this resource"
         },
         "title": {
-          "description": "Name of this mobile audio file – derived from the artwork and tour titles"
+          "description": "The name of this resource"
         },
-        "web_url": {
-          "description": "URL to the audio file"
+        "type": {
+          "description": "Type always takes one of the following values: image, sound, text, video"
         },
-        "transcript": {
-          "description": "Text transcription of the audio file"
+        "alt_text": {
+          "description": "Alternative text for the asset to describe it to people with low or no vision"
+        },
+        "content": {
+          "description": "Text of or URL to the contents of this asset"
+        },
+        "is_multimedia_resource": {
+          "description": "Whether this resource is considered to be multimedia"
+        },
+        "is_educational_resource": {
+          "description": "Whether this resource is considered to be educational"
+        },
+        "is_teacher_resource": {
+          "description": "Whether this resource is considered to be educational"
+        },
+        "credit_line": {
+          "description": "Asset-specific copyright information"
+        },
+        "content_e_tag": {
+          "description": "Arbitrary unique identifier that changes when the binary file gets updated"
+        },
+        "artwork_ids": {
+          "description": "Unique identifiers of the artworks associated with this asset"
+        },
+        "artwork_titles": {
+          "description": "Names of the artworks associated with this asset"
         },
         "suggest_autocomplete_boosted": {
           "description": "Internal field to power the `/autocomplete` endpoint. Do not use directly."
@@ -4117,6 +4447,7 @@
       },
       "type": "object"
     },
+
     "Text": {
       "properties": {
         "id": {
@@ -4182,6 +4513,7 @@
       },
       "type": "object"
     },
+
     "Product": {
       "properties": {
         "id": {
@@ -4250,6 +4582,7 @@
       },
       "type": "object"
     },
+
     "Tour": {
       "properties": {
         "id": {
@@ -4306,6 +4639,46 @@
       },
       "type": "object"
     },
+
+    "Sound": {
+      "properties": {
+        "id": {
+          "description": "Unique identifier of this resource. Taken from the source system."
+        },
+        "api_model": {
+          "description": "REST API resource type or endpoint"
+        },
+        "api_link": {
+          "description": "REST API link for this resource"
+        },
+        "title": {
+          "description": "Name of this mobile audio file – derived from the artwork and tour titles"
+        },
+        "web_url": {
+          "description": "URL to the audio file"
+        },
+        "transcript": {
+          "description": "Text transcription of the audio file"
+        },
+        "suggest_autocomplete_boosted": {
+          "description": "Internal field to power the `/autocomplete` endpoint. Do not use directly."
+        },
+        "suggest_autocomplete_all": {
+          "description": "Internal field to power the `/autosuggest` endpoint. Do not use directly."
+        },
+        "source_updated_at": {
+          "description": "Date and time the resource was updated in the source system"
+        },
+        "updated_at": {
+          "description": "Date and time the record was updated in the aggregator database"
+        },
+        "timestamp": {
+          "description": "Date and time the record was updated in the aggregator search index"
+        }
+      },
+      "type": "object"
+    },
+
     "Publication": {
       "properties": {
         "id": {
@@ -4344,6 +4717,7 @@
       },
       "type": "object"
     },
+
     "Section": {
       "properties": {
         "id": {
@@ -4397,6 +4771,7 @@
       },
       "type": "object"
     },
+
     "Site": {
       "properties": {
         "id": {
@@ -4447,6 +4822,7 @@
       },
       "type": "object"
     },
+
     "Event": {
       "properties": {
         "id": {
@@ -4611,6 +4987,7 @@
       },
       "type": "object"
     },
+
     "EventOccurrence": {
       "properties": {
         "id": {
@@ -4691,6 +5068,7 @@
       },
       "type": "object"
     },
+
     "EventProgram": {
       "properties": {
         "id": {
@@ -4729,6 +5107,7 @@
       },
       "type": "object"
     },
+
     "Article": {
       "properties": {
         "id": {
@@ -4764,6 +5143,7 @@
       },
       "type": "object"
     },
+
     "Highlight": {
       "properties": {
         "id": {
@@ -4799,6 +5179,7 @@
       },
       "type": "object"
     },
+
     "StaticPage": {
       "properties": {
         "id": {
@@ -4834,6 +5215,7 @@
       },
       "type": "object"
     },
+
     "GenericPage": {
       "properties": {
         "id": {
@@ -4875,6 +5257,7 @@
       },
       "type": "object"
     },
+
     "LandingPage": {
       "properties": {
         "id": {
@@ -4916,6 +5299,7 @@
       },
       "type": "object"
     },
+
     "PressRelease": {
       "properties": {
         "id": {
@@ -4954,6 +5338,7 @@
       },
       "type": "object"
     },
+
     "EducatorResource": {
       "properties": {
         "id": {
@@ -4992,6 +5377,7 @@
       },
       "type": "object"
     },
+
     "DigitalPublication": {
       "properties": {
         "id": {
@@ -5030,6 +5416,7 @@
       },
       "type": "object"
     },
+
     "DigitalPublicationArticle": {
       "properties": {
         "id": {
@@ -5074,6 +5461,7 @@
       },
       "type": "object"
     },
+
     "PrintedPublication": {
       "properties": {
         "id": {
@@ -5112,6 +5500,7 @@
       },
       "type": "object"
     },
+
     "Hour": {
       "properties": {
         "id": {
@@ -5255,6 +5644,7 @@
       },
       "type": "object"
     },
+
     "SearchResult": {
       "properties": {
         "_score": {
@@ -5287,7 +5677,9 @@
       },
       "type": "object"
     }
+
   },
+
   "parameters": {
     "id": {
       "name": "id",
@@ -5381,3 +5773,4 @@
     "url": "https://api.artic.edu"
   }
 }
+
