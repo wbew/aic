@@ -1,3 +1,12 @@
-[tasks]
-build = "bun run build"
-test = "bun run test"
+[tasks."openapi-client:gen"]
+description = "Generate a client using AIC's OpenAPI specification (https://api.artic.edu/api/v1/openapi.json)"
+usage = '''
+arg "<openapi-spec>" help="path to the OpenAPI JSON file" default="./aic-api.openapi.jsonc"
+'''
+run = "bunx @hey-api/openapi-ts --input ${openapi-spec?} --output ./lib/generated"
+
+[tasks."openapi-client:refresh"]
+description = "Refresh the OpenAPI specification"
+run = '''
+"curl -fsSL "https://api.artic.edu/api/v1/openapi.json" -o "aic-api-openapi.jsonc""
+'''
